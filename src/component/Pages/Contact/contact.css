@@ -1,0 +1,27 @@
+.contact-block {
+  text-align: center;
+  border: 5px solid var(--lightBlue);
+  padding: 50px 25px;
+}
+.contact-block svg {
+  font-size: 50px;
+  margin-bottom: 15px;
+  display: inline-block;
+  color: var(--pink);
+}
+
+.contact-block svg path {
+  stroke: var(--pink);
+}
+
+.contact-form-wrap .form-group .form-control,
+.contact-form-wrap .form-group-2 textarea {
+  height: 60px;
+  border: 1px solid var(--lightBlue);
+  box-shadow: none;
+  width: 100%;
+  background: #f4f9fc;
+}
+.contact-form-wrap .form-group-2 textarea {
+  height: auto;
+}
