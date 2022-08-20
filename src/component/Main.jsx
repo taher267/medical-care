@@ -3,15 +3,12 @@ import AuthProvider from "./context/AuthProvider";
 import { transitions, positions, Provider as AlertProvider } from "react-alert";
 import AlertTemplate from "react-alert-template-basic";
 import Home from "./Pages/Home/Home";
-import "./css/bootstrap.css";
 import "./css/style.css";
-import Services from "./Pages/Services/Services";
-import About from "./Pages/About/About";
-import Doctors from "./Pages/Doctors/Doctors";
 import Contact from "./Pages/Contact/Contact";
-import Signup from "./Pages/LoginSignup/Signup";
 import Login from "./Pages/LoginSignup/Login";
-import { Alerm } from "./alerm/Alerm";
+import Dashboard from "./Pages/Admin/Dashbard/Dashboard";
+import PrivateRoute from "./../routes/PrivateRoute";
+import Users from "./Pages/Admin/Users/Users";
 const options = {
   position: positions.BOTTOM_RIGHT,
   timeout: 5000,
@@ -24,14 +21,13 @@ export default function Main() {
       <AuthProvider>
         <BrowserRouter>
           <Routes>
-            <Route path="/home" element={<Home />} />
-            <Route path="/services" element={<Services />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/doctors" element={<Doctors />} />
+            <Route path="/" element={<Home />} />
             <Route path="/contact" element={<Contact />} />
-            <Route path="/signup" element={<Signup />} />
             <Route path="/login" element={<Login />} />
-            <Route path="/" element={<Alerm />} />
+            <Route path="/dashboard" element={<PrivateRoute />}>
+              <Route path="" element={<Dashboard />} />
+              <Route path="users" element={<Users />} />
+            </Route>
           </Routes>
         </BrowserRouter>
       </AuthProvider>

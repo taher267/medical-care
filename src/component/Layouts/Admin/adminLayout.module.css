@@ -1,0 +1,19 @@
+.content {
+  position: relative;
+  width: calc(100% - 280px);
+  left: 280px;
+  transition: 0.3s ease;
+}
+
+.main {
+  width: 100%;
+  padding: 36px 24px;
+  font-family: var(--poppins);
+  max-height: calc(100vh - 56px);
+  overflow-y: auto;
+}
+
+.expendContent {
+  width: calc(100% - 60px);
+  left: 60px;
+}

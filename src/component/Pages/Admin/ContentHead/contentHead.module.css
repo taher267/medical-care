@@ -1,0 +1,42 @@
+.headTitle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  grid-gap: 16px;
+  flex-wrap: wrap;
+}
+.left h1 {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: var(--dark);
+}
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  grid-gap: 16px;
+}
+.breadcrumb li {
+  color: var(--dark);
+}
+.breadcrumb li a {
+  color: var(--dark-grey);
+  pointer-events: none;
+}
+.breadcrumb li a.active {
+  color: var(--blue);
+  pointer-events: unset;
+}
+
+.btnDownload {
+  height: 36px;
+  padding: 0 16px;
+  border-radius: 36px;
+  background: var(--blue);
+  color: var(--light);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-gap: 10px;
+  font-weight: 500;
+}

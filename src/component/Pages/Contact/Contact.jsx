@@ -1,5 +1,4 @@
 import MainLayout from "../../Layouts/MainLayout";
-import Bread from "./../Breadcrumb/Bread";
 import "./contact.css";
 import { BiSupport } from "react-icons/bi";
 import { MdOutlineAlternateEmail } from "react-icons/md";
@@ -7,7 +6,6 @@ import { GrLocation } from "react-icons/gr";
 export default function Contact() {
   return (
     <MainLayout title="Contact">
-      <Bread title="Get In Touch" subtitle="Contact Us" />
       <ContactInfo />
       <ContactForm />
     </MainLayout>
